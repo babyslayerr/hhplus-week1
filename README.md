@@ -1,5 +1,5 @@
 # 동시성 제어 방식에 대한 분석 
-
+-- --
 Application level 에서 동시성을 제어할 수 있는 두가지 방식
 
 ## synchronized vs ReentrantLock
@@ -13,3 +13,4 @@ Application level 에서 동시성을 제어할 수 있는 두가지 방식
 
 `lock.lock()으로 임계영역을 잠그고, 작업이 끝난 후 반드시 lock.unlock()로 잠금을 해제, 예외가 발생하더라도 finally 블록을 통해 안전하게 잠금을 해제
 Wrapper 클래스를 사용하여 기존 구현을 변경하지 않을 수 있음, 조건 변수나 대기/알림 메커니즘을 활용할 수 있어 확장성이 뛰어남`
+
